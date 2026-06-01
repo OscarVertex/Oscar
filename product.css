@@ -1,0 +1,44 @@
+*{
+    margin: 15px;
+    word-spacing: 15em;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-decoration: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+header{
+    box-shadow: 0,16px,16px  black ;
+    border: 2px solid black;
+    padding:15px;
+    border-radius: 15px;
+    background-color:#000;
+}
+.a1{    
+    position: relative;
+    left: -13px;
+}
+.a1:hover{
+    color: wheat;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a2{
+    position: relative;
+    left: -13px;
+}
+.a2:hover{
+    color: wheat;
+}
+.a3{
+    position: relative;
+    margin-right: 0;
+    left: -13px;
+}
+.a3:hover{
+    color: wheat;
+}

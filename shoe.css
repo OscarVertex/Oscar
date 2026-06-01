@@ -1,0 +1,30 @@
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+a:hover{
+    animation-name: me;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes me{
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+        color: red;
+    }
+}
+.shoes{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}

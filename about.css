@@ -1,0 +1,48 @@
+body{
+    margin: 1em;
+    border: 3px solid cornflowerblue;
+    border-radius: 20px;
+    outline: 5em solid white;
+    height: 38.9em;
+    background-color:black;
+}
+header{
+    position: absolute;
+}
+img{
+    border: 3px solid aqua;
+    box-shadow: 0 15px 15px aqua,0 15px 15px aqua;
+    border-radius: 25vh;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    top: 8em;
+    margin: 2em;
+    margin-left: 60em;
+    animation-name: name;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes name{
+    0%{
+
+    }
+    100%{
+        box-shadow: 0 15px 15px aquamarine,0 15px 15px aquamarine;
+        border: 3px solid aquamarine;
+    }
+}
+main{
+    position: absolute;
+}
+h1{
+    margin: 1em;
+    position: relative;
+    line-height: 0.5em;
+    top: 5em;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: cyan;
+}

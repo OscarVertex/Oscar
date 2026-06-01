@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        body{
+            margin: 0;
+            background: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        canvas{
+            background: #222;
+            display: block;
+            margin: auto;
+        }
+        #hud{
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="hud">Score: 0|Health: 3</div>
+    <canvas id="game" width="500" height="500"></canvas>
+
+    <script>
+        const canvas=
+        document.getElementById("game");
+        const ctx = canvas.getContext("2d");
+
+        let score = 0;
+        let health = 3;
+
+        //Player
+        let player = {x: 250,y: 450,size: 15};
+
+        //Bullets
+        let bullets = [];
+
+        //Enemies
+        let enemies = [];
+
+        function spawnEnemy() {
+            enemies.push({
+                x: Math.random()*480,
+                y: 0,
+                size: 15,
+                speed: 1 + Math.random()*2
+
+        });
+        }
+
+        setInterval(spawnEnemy, 1000);
+
+        //Draw player
+        function drawPlayer() {
+            ctx.fillStyle = "cyan";
+            ctx.fillRect(player.x,player.y,player.size,player.size);
+        }
+
+        //Draw bullets
+        function drawBullets() {
+            ctx.fillStyle = "yellow";
+            bullets.forEach(b=>{
+                ctx.fillRect(b.x,b.y,5, 10);
+                b.y -= 5;
+            });
+     }
+        //Draw enemies
+        function drawEnemies() {
+            ctx.fillStyle = "red";
+            enemies.forEach(e =>{
+                ctx.fillRect(e.x,e.y,e.size,e.size);
+                e.y += e.speed;
+            });
+        }
+        //Collision check
+        function checkCollision(a,b){
+            return a.x <b.x + b.size &&
+            a.x + 5 > b.x &&
+            a.y < b.y + b.size &&
+            a.y + 10 > b.y;
+        }
+        //Game loop
+        function update(){
+            ctx.clearRect(0, 0, canvas.width, canvas.height );
+
+            drawPlayer();
+            drawBullets();
+            drawEnemies();
+
+            //Bullet hits enemy
+            bullets.forEach((b, bi)=>{
+                enemies.forEach((e, ei)=>{
+                    if(checkCollision(b, e)){
+                        enemies.splice(ei, 1);
+                        bullets.splice(bi, 1);
+                        score++;
+                    }
+            });
+            });
+
+            //Enemy hits player
+            enemis.forEach((e, ei)=>{
+                if(
+                    e.x < player.x + player.size&&
+                    e.x + e.size > player.x &&
+                    e.y < player.y + player.size &&
+                    e.y + e.size > player.y
+                ){
+                    enemies.splice(ei, 1);
+                    health--;
+                    if(health <= 0){
+                        alert("Game Over! Score:" +score);
+                        location.reload();
+                    }
+                }
+            });
+
+            document.getElement
+            Byld("hud").innerHTML
+            =
+            "Score: "+ score +"Health: "+ health;
+
+            requestAnimationFrame(update);
+        }
+
+        update();
+
+        //Shoot on click
+        window.addEventListener("click", ()=> {
+            bullets.push({
+                x: player.x + 5,
+                y: player.y
+         });
+        });
+
+        //Move player
+        window.addEventListener("keydown", (e)=>{
+            if (e.key === "ArrowLeft")player.x-= 10;
+            if (e.key === "ArrowRight")player.x+= 10;
+        });
+    </script>
+    
+</body>
+</html>

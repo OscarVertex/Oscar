@@ -1,0 +1,73 @@
+*{
+    flex-wrap: wrap
+}
+body{
+    position: absolute;
+
+}
+header{
+    margin: 2em;
+}
+h1{
+    color: darkmagenta;
+    text-shadow:  0 0 15px darkmagenta, 0 0 15px darkorchid;
+    font-size: 7em;
+    font-family: sans-serif;
+    position: relative;
+    top: 0.5em;
+}
+h3{
+    font-size: 25px;
+    color: blueviolet;
+    text-shadow: 0 0 15px blueviolet, 0 0 15px blueviolet;
+}
+main{
+    position: absolute;
+}
+form{
+    text-align: end;
+    border: 3px solid darkmagenta;
+    border-radius: 30px;
+    box-shadow:  0 17px 17px darkmagenta, 0 17px 17px darkmagenta;
+    height: 30em;
+    width: 25em;
+    margin-right: 2em;
+    margin-left: 55em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5em;
+}
+input{
+    padding: 2rem;
+    font-size: x-large;
+    border: 2px solid purple;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+button{
+    margin: 2em;
+    padding: 35px;
+    padding-top: 10px;
+    width: 20em;
+    height: 20px;
+    border: 3px solid purple;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: purple;
+}
+button:active{
+    transform: scale(2);
+    transition: 1s;
+}
+button a {
+    font-size: x-large;
+    color: black;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-decoration: none;
+    color: palevioletred;
+}

@@ -1,0 +1,97 @@
+h1{
+    color: blue;
+    font-size: 90px;
+    font-family: sans-serif;
+    margin: 50px;
+    width: 50px;
+}
+.help{
+    margin-bottom: 1em;
+    border-radius: 20px;
+}
+.help::before{
+    border: 2px solid gray;
+}
+.help::after,
+.help:hover{
+    border-left: 3px solid blue;
+    border-top: 3px solid blue;
+    border-right: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+}
+.me{
+    border-radius: 20px;
+}
+.me::before{
+    border: 2px solid gray;
+}
+.me::after,
+.me:hover{
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;
+    border-right: 3px solid skyblue;
+    border-bottom: 3px solid skyblue;
+}
+p{
+    margin-left:52em ;
+}
+.signing{
+    border-left: 4px double lightgreen;
+    border-top: 4px double lightgreen;
+    border-bottom: 4px solid darkgreen;
+    border-right: 4px solid darkgreen;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    font-size: x-large;
+    margin-left: 36em;
+    background-color: green;
+}
+.signing:hover{
+    text-decoration: underline;
+    transition: ease-in;
+    transform: scale(1.1);
+}
+.login{
+    border: 3px solid black;
+    border-top: 2px double gray;
+    border-right: 2px double gray;
+    border-radius: 20px;
+    outline: 3px double gray;
+    padding: 20px;
+    width: 200px;
+    margin-right: 6em;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+.login:hover{
+    text-decoration: underline;
+    background-color: white;
+    transition:  ease-in;
+    transform: scale(1.1);
+}
+.container{
+    text-align: end;
+    margin-right: 5em;
+    padding: 25px;
+    margin-left: 40em;
+    border: 3px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: black;
+    width: 30em;
+    height: 25em;
+}
+input{
+    margin: 10px;
+    padding: 45px;
+    font-size: 30px;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 55px;
+}
+

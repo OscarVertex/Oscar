@@ -1,0 +1,46 @@
+
+.input{
+    padding: 2em;
+    text-align: center;
+    margin: 2em;
+    border: 5px solid gray;
+    outline: 5px solid black;
+    border-radius: 20px;
+    background-color: ghostwhite;
+}
+h4{
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+a{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+input{
+    padding: 15px;
+    font-size: 22px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+button{
+    padding: 15px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    background-color: rgb(93, 248, 3);
+    font-weight: bolder;
+    border: 2px solid ghostwhite;
+    border-radius: 20px;
+    width: 7em;
+}
+button:hover{
+    transition: ease-in;
+    transform: scale(1.1);
+}
+h5{
+    font-style: italic;
+}

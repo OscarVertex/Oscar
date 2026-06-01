@@ -1,0 +1,11 @@
+body{
+    background-color: black ;
+}
+h1{
+    color: aqua;
+    text-shadow: 0 0 15px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+
+}

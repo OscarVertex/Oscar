@@ -1,0 +1,72 @@
+.pic{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3em;
+    gap: 1.6em;
+}
+h3{
+    font-family: sans-serif;
+    position: relative;
+    left: 45%;
+}
+img{
+    max-width: 300px;
+    border-radius: 20px;
+    height: 300px;
+    border: 2px solid blueviolet;
+    margin-bottom: 1.5em;
+}
+a{
+    color: wheat;
+    text-decoration-line: none;
+}
+button:hover{
+    opacity: 80%;
+}
+button{
+    transition: 300ms;
+    position: relative;
+    left: 35%;
+    padding: 1em;
+    width: 25em;
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: 2px solid blue;
+    background: linear-gradient(to right, blue,blueviolet);
+}
+@media (max-width: 390px){
+    img{
+        max-width: 250px;
+    }
+    h3{
+        position: relative;
+        left: 6em;
+    }
+    button{
+        position: relative;
+        left: 2em;
+        width:20em;
+    }
+}
+@media(max-width: 414px){
+    button{
+        width: 20em;
+        position: relative;
+        left: 2em;
+    }
+    img{
+        width:200px ;
+    }
+}
+@media(max-width: 768px){
+    button{
+        position: relative;
+        left: 10em;
+    }
+    .pic{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
